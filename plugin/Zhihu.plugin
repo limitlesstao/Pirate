@@ -4,7 +4,7 @@
 #!author = 莫离
 #!homepage=https://github.com/fmz200/wool_scripts
 #!icon = https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App/Zhihu.png
-#!date = 2024-02-20 11:11:20
+#!date = 202411:11:20
 
 [Rule]
 DOMAIN, appcloud.zhihu.com, REJECT
