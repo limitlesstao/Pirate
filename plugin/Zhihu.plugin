@@ -1,10 +1,10 @@
 #!name = 知乎去广告
 #!desc = 过滤知乎广告，建议卸载重装app。
 #!openUrl = https://apps.apple.com/app/id432274380
-#!author = 莫离
+#!author = 奶思[https://github.com/fmz200/wool_scripts]
 #!homepage=https://github.com/fmz200/wool_scripts
 #!icon = https://raw.githubusercontent.com/limitlesstao/Pirate/main/Icon/App/Zhihu.png
-#!date = 2024-12-06 01:16
+#!date = 2024-12-06 08:24
 
 [Rule]
 DOMAIN, appcloud.zhihu.com, REJECT
@@ -49,7 +49,7 @@ hostname = api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com,
 ^https:\/\/www\.zhihu\.com\/api\/v4/(?:answers|questions)\/\d+/related-readings reject
 ^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner reject
 ^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation reject
-# =====================================
+
 [Script]
 # 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片、精简顶部标签
 http-response ^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+ script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js, requires-body = true, tag = 知乎移除首页推广
