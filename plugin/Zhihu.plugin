@@ -1,7 +1,7 @@
 #!name = 知乎去广告
 #!desc = 过滤知乎广告，建议卸载重装app。
 #!openUrl = https://apps.apple.com/app/id432274380
-#!author = 奶思[https://github.com/fmz200/wool_scripts]
+#!author = RuCu6[https://github.com/RuCu6],blackmatrix7[https://github.com/blackmatrix7]奶思[https://github.com/fmz200/wool_scripts]
 #!homepage=https://github.com/fmz200/wool_scripts
 #!icon = https://raw.githubusercontent.com/limitlesstao/Pirate/main/Icon/App/Zhihu.png
 #!date = 2024-12-06 08:24
@@ -18,7 +18,6 @@ IP-CIDR, 118.89.204.198/32, REJECT, no-resolve
 IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 
 [Rewrite]
-hostname = api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
 # 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
 ^https:\/\/api\.zhihu\.com\/commercial_api\/(?:answer\/\d+\/bottom-v2|article\/\d+\/bottom-v2|banners_v3\/app_topstory_banner|launch_v2|real_time_launch_v2) reject-dict
 ^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings reject-dict
@@ -67,3 +66,6 @@ http-response ^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/re
 # 其他 - 服务器推送配置
 http-response ^https:\/\/appcloud2\.zhihu\.com\/v3\/config script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js, requires-body = true, tag = 知乎拦截服务器推送配置
 http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js, requires-body = true, tag = 知乎拦截服务器推送配置
+
+[MitM]
+hostname = api.zhihu.com, www.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, zhuanlan.zhihu.com, link.zhihu.com
