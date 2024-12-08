@@ -7,6 +7,14 @@
 #!boxjs=https://raw.githubusercontent.com/BiliUniverse/BoxJs/main/BiliBili.boxjs.json
 #!edit=https://github.com/Moli-X/Resources/edit/main/Loon/Bilibili.plugin
 
+[Argument]
+ForceHost = select,"1","0","2",tag=强制CDN主机名类型,desc=请设置强制返回的CDN主机名类型。
+Locales = input,"CHN,HKG,TWN",tag=启用自动识别与分流功能的地区,desc=请选择启用自动识别与分流功能的地区。
+Proxies.CHN = input,"DIRECT",tag=[🇨🇳中国大陆] 代理策略名称,desc=请填写此地区的代理或策略组名称。
+Proxies.HKG = input,"香港节点",tag=[🇭🇰中国香港] 代理策略名称,desc=请填写此地区的代理或策略组名称。
+Proxies.MAC = input,"澳门节点",tag=[🇲🇴中国澳门] 代理策略名称,desc=请填写此地区的代理或策略组名称。
+Proxies.TWN = input,"台湾节点",tag=[🇹🇼中国台湾] 代理策略名称,desc=请填写此地区的代理或策略组名称。
+
 [Rewrite]
 # 📺 BiliBili: 🛡️ ADBlock
 # 去除搜索中的默认关键词
