@@ -1,6 +1,6 @@
 #原链接 https://raw.githubusercontent.com/deezertidal/private/master/plugallery/nybz.plugin
-#!name= 奶由壁纸
-#!desc= 奶由壁纸VIP解锁
+#!name= 奶由桌面
+#!desc= 奶由桌面VIP解锁
 #!openUrl = https://apps.apple.com/app/id1561724339
 #!author = Marol62926
 #!tag = VIP解锁
@@ -13,7 +13,6 @@
 
 
 [Script]
-
 http-response https://nz-api.duitang.com/account/me script-path = https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/Naiyou.js, requires-body=1,max-size=0
 
 [MITM]
