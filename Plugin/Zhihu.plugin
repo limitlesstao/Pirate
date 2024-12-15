@@ -2,9 +2,14 @@
 #!desc = 过滤知乎广告，建议卸载重装app。
 #!openUrl = https://apps.apple.com/app/id432274380
 #!author = 奶思[https://github.com/fmz200/wool_scripts]
-#!homepage=https://github.com/fmz200/wool_scripts
+#!tag=去广告
+#!system=
+#!system_version= 
+#!loon_version= 3.2.4(787)
+#!homepage= https://github.com/fmz200/wool_scripts
 #!icon = https://raw.githubusercontent.com/limitlesstao/Pirate/main/Icon/App/Zhihu.png
-#!date = 2024-12-08  00:56
+#!date = 2024-12-16 00:07:07
+
 
 [Rule]
 DOMAIN, appcloud.zhihu.com, REJECT
