@@ -2,8 +2,6 @@
 #!desc= 屏蔽如百度输入法，百度网盘，百度地图等app广告
 #!openUrl= https://apps.apple.com/app/id382201985
 #!author= zqzess[https://github.com/zqzess],
-#!homepage= https://github.com/zqzess/rule_for_quantumultX
-#!icon= https://raw.githubusercontent.com/limitlesstao/Pirate/main/Icon/App/Baidu.png
 #!tag= 去广告
 #!system=
 #!system_version=
