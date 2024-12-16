@@ -8,8 +8,8 @@
 #!system_version=15
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon=https://raw.githubusercontent.com/limitlesstao/Pirate/main/AppIcon/Tieba.png
-#!date=2024-12-16 09:14:12
+#!icon=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Icon/Tieba.png
+#!date=2024-12-17 00:00:00
 
 [Rule]
 DOMAIN,afd.baidu.com,REJECT
