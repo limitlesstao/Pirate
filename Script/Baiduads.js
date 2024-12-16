@@ -1,4 +1,4 @@
-/*移除百度搜索首页信息流广告BaiduSearchHomePage_remove_ads
+/*百度搜索首页信息去广告BaiduSearchHomePage_remove_ads
 脚本引用https://raw.githubusercontent.com/Keywos/rule/main/JS/baiduindex.js
 */
 //2023-09-13 22:48:24
