@@ -3,14 +3,14 @@
 #!name=百度贴吧去广告
 #!desc=移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面。需注意此插件会导致新回复等通知功能不可用，需手动进入消息页点击查看。仅限iOS 15及以上版本系统使用。
 #!openUrl =https://apps.apple.com/app/id477927812
-#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
+#!author=ZenmoFeiShi[https://github.com/ZenmoFeiShi],blackmatrix7[https://github.com/blackmatrix7/ios_rule_script],app2smile[https://github.com/Moli-X/Tool/blob/X/Loon/Readme.md]
 #!tag=去广告
 #!system=ios
 #!system_version=15
 #!loon_version=3.2.4(787)
 #!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Icon/Tieba.png
-#!date=2024-12-17 00:00:00
+#!date=2024-12-20 00:35:43
 
 [Rule]
 DOMAIN,afd.baidu.com,REJECT
@@ -32,8 +32,8 @@ http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|
 http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path=https://kelee.one/Resource/Script/Tieba/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=Proto处理
 #百度贴吧每日签到
 http-request ^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/tieba_signin.js,tag=贴吧_获取Cookie1
-#http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig script-path=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/tieba_signin.js,tag=贴吧_新版Cookie2
-#http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo script-path=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/tieba_signin.js,tag=贴吧_新版Cookie3
+http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig script-path=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/tieba_signin.js,tag=贴吧_新版Cookie2
+http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo script-path=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/tieba_signin.js,tag=贴吧_新版Cookie3
 cron "30 9 * * *" script-path=https://raw.githubusercontent.com/limitlesstao/Pirate/main/Script/tieba_signin.js,timeout=60,tag=贴吧_每日签到
 [MitM]
 hostname=tiebac.baidu.com,tieba.baidu.com,c.tieba.baidu.com
